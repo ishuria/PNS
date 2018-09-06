@@ -10,7 +10,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/pns")
+@RequestMapping(value = "")
 @Validated
 @CrossOrigin(origins = "*", maxAge = 3600)
 public class IndexController {
