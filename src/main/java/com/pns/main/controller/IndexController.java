@@ -17,8 +17,7 @@ public class IndexController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
-    @RequestMapping(value = "/index", produces = {CommonConst.PRODUCE},
-            method = RequestMethod.GET)
+    @RequestMapping(value = "/index", produces = {CommonConst.PRODUCE}, method = RequestMethod.GET)
     public String index() {
         ResponseFormat responseFormat = new ResponseFormat(ReturnCode.USER_SUCCESS);
         logger.info("start IndexController::index");
